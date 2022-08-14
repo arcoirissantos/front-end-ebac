@@ -1,0 +1,93 @@
+.nav-coffee a{
+  background-image: url(../images/line.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* structure */
+main{
+  padding: 1em;
+  width: 100vw;
+}
+form{
+  max-width: 350px;
+}
+form h2, form p{
+  text-align: center;
+}
+form li{
+  display: flex;
+  flex-direction: column;
+}
+/* make legend disappear*/ form legend{ 
+  position: absolute;
+  right: 3000px;
+}
+.radio li{
+  display: block;
+}
+/* image */
+main img{
+  width: 90vw;
+  margin-top: 1em;
+}
+/* visuals */
+form h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 1.2em;
+  margin-bottom: .5em;
+}
+form p, #form_name, #form_email, #form_message, .radio-label, form label{
+  margin-bottom: .5em;
+}
+form button{
+  margin-top: 1em;
+    background-color: #0077b6;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 2em;
+    color: white;
+    transition: background-color .2s ease-in-out;
+    font-size: large;
+}
+.btn {
+  display: flex;
+  align-items: center;
+}
+form button:focus,
+form button:hover{
+  background-color: #6f4e37ff;
+}
+form button:active{
+  background-color: tomato;
+}
+@media (min-width: 340px){
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: auto;
+  }
+  form{
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 1em;
+    /* box-shadow: 20px 20px 60px #d9d9d9,-20px -20px 60px #ffffff; */
+  }
+  main img{
+    max-width: 300px;
+  }
+
+}
+@media (min-width: 950px){
+  main{
+    flex-direction: row;
+    margin: 0 auto;
+    width: auto;
+    height: 100vh;
+    justify-content: center;
+  }
+  main img{
+    margin-left: 3em;
+  }
+}
