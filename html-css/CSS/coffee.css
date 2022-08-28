@@ -6,7 +6,9 @@
 /* structure */
 main{
   padding: 1em;
-  width: 100vw;
+  min-height: 83vh;
+  /* width: 100vw; */
+
 }
 form{
   max-width: 350px;
@@ -84,7 +86,7 @@ form button:active{
     flex-direction: row;
     margin: 0 auto;
     width: auto;
-    height: 100vh;
+    /* height: 100vh; */
     justify-content: center;
   }
   main img{

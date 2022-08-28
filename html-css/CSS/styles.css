@@ -5,7 +5,7 @@
 
 body {
   display: grid;
-  grid: auto auto auto / 240px auto;
+  grid: 12vh auto 5vh / 240px auto;
   grid-template-areas: "header header"
                         "nav content"
                         "footer footer";
@@ -85,9 +85,10 @@ footer {
 nav {
   background: #E0FFFF;
   padding: 20px;
-  display: flex;
+  /* display: flex; */
   flex-flow: column wrap;
   border-right: solid 5px #0076b67c ;
+  /* padding: 2em; */
 }
 
 nav ul li {
@@ -176,6 +177,13 @@ nav li a:hover {
 
 .nav-coffee {
   background-image: url(../images/coffee_icon.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 1.2em;
+}
+
+.nav-articles {
+  background-image: url(../images/article_icon.svg);
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: 1.2em;
