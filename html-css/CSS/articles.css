@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
 }
 
+/* Articles front page */
 main {
     min-height: 83vh;
     padding: 2em;
@@ -15,7 +16,7 @@ main {
     
 }
 
-main div {
+main .article {
     width: 300px;
     height: 135px;
     margin-bottom: 2em;
@@ -42,12 +43,13 @@ main a{
 
 @media (max-width:400px){
     main div {
-        width: 250px;
+        width: 250px!important;
+        margin-right: 0!important;
     }
 }
 
-main div:focus,
-main div:hover{
+main .article:focus,
+main .article:hover{
     box-shadow: none;
     top: 5px;
     left: 5px;
@@ -57,3 +59,48 @@ main a:focus,
 main a:hover{
     text-decoration: underline;
 }
+
+/* Articles pages */
+.container{
+    max-width: 35em;
+}
+
+
+main article h1{
+    font-size: 2.2em;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+    color: #0077b6;
+    margin: 1em 0;
+}
+
+main article h2 {
+    font-size: 1.5em;
+    font-family: 'Acme', sans-serif;
+    color: #0077b6;
+    margin: 1em 0;
+}
+
+main article p{
+    line-height: 150%;
+    margin: 1em 0;
+}
+main article ol li{
+    line-height: 150%;
+    margin: 1em 0;
+}
+
+/* @media (max-width: 1012px){
+    article{
+        display: flex;
+        gap: 3em;
+    }
+    
+    .summary{
+        order: 2;
+        position: sticky;
+        top: 1em;
+        max-width: 15em;
+        height: 25em;
+    }
+} */
