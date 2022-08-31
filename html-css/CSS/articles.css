@@ -24,9 +24,9 @@ main .article {
     border:solid 3.5px #0077b6ff;
     border-radius: 20px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
     box-shadow: 5px 5px #0077b6ff;
     position: relative;
@@ -40,6 +40,16 @@ main .article {
 main a{
     text-decoration: none;
 }
+
+.article1 {
+    background-image: url(/html-css/images/Articles/Article1/planning_a_website/planning_a_website_ybuetq_c_scale\,w_586.jpg);
+    background-position: center;
+    overflow: hidden;
+  }
+  .article p{
+    background-color: #ffffffc6;
+    padding: 40px;
+  }
 
 @media (max-width:400px){
     main div {
@@ -74,6 +84,15 @@ main article h1{
     margin: 1em 0;
 }
 
+main picture img {
+    max-width: 95%;
+    height: auto;
+    display: block;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    margin-bottom: 2em;
+
+}
+
 main article h2 {
     font-size: 1.5em;
     font-family: 'Acme', sans-serif;
@@ -90,17 +109,21 @@ main article ol li{
     margin: 1em 0;
 }
 
-/* @media (max-width: 1012px){
-    article{
-        display: flex;
-        gap: 3em;
-    }
-    
-    .summary{
-        order: 2;
-        position: sticky;
-        top: 1em;
-        max-width: 15em;
-        height: 25em;
-    }
-} */
+/* form */
+.cognito{
+    margin-top: 3em;
+}
+.cognito button{
+    background-color: #0077b6!important;
+    border: transparent!important;
+}
+.cognito h1{
+    color: #0077b6!important;
+    font-family: 'Acme', sans-serif!important;
+}
+
+/* hide forms informations */
+.cognito{
+    height: 400px;
+    overflow: hidden;
+}

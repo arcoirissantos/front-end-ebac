@@ -106,7 +106,6 @@
 }
 
 /* Second section */
-
 .presentation_section2 {
   display: grid;
   grid: auto auto auto / auto auto;
@@ -121,6 +120,7 @@
   justify-items: center;
   column-gap: 2em;
   z-index: 100;
+  position: relative;
 
 }
 
@@ -164,6 +164,116 @@
 
 .presentation_section2 button:active {
   background-color: red;
+}
+
+/* third section */
+
+
+.articles-section {
+   background-color: #E8F7FF;
+  position: relative;
+  padding-top: 100px;
+}
+.articles-section .content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+.articles-section h2{
+  font-size: 2.2em;
+  font-family: 'Acme', sans-serif;
+  line-height: 1.2em;
+  text-align: center;
+  font-weight: lighter;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.articles-section h2 img{
+  position: absolute;
+  top: -5px;
+
+}
+
+.divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.divider svg {
+  position: relative;
+  display: block;
+  width: calc(133% + 1.3px);
+  height: 122px;
+}
+
+.divider .shape-fill {
+  fill: #FFFFFF;
+}
+
+.article {
+  width: 200px;
+  height: 300px;
+  margin-bottom: 2em;
+  margin-right: 2em;
+  border:solid 3.5px #0077b6ff;
+  border-radius: 20px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* padding: 10px; */
+  text-align: center;
+  box-shadow: 5px 5px #0077b6ff;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition-property: top, left, box-shadow;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+  
+}
+
+.article1 {
+  background-image: url(/html-css/images/Articles/Article1/planning_a_website/planning_a_website_ybuetq_c_scale\,w_586.jpg);
+  background-position: center;
+  overflow: hidden;
+}
+
+.article p{
+  padding-top: 50px!important;
+  font-weight: bold;
+}
+.article1 p{
+  background-color: #ffffffc6;
+  padding: 5px;
+}
+
+.articles-section a{
+  text-decoration: none;
+}
+
+@media (max-width:400px){
+ .articles-section div {
+      /* width: 250px!important; */
+      margin-right: 0!important;
+  }
+}
+
+.articles-section .article:focus,
+.articles-section .article:hover{
+  box-shadow: none;
+  top: 5px;
+  left: 5px;
+}
+
+.articles-section a:focus,
+.articles-section a:hover{
+  text-decoration: underline;
 }
 
 /* responsiveness */

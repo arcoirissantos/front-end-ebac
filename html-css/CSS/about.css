@@ -3,6 +3,9 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+body{
+  min-height: 100vh;
+}
 /* first part */
 .about_profile {
   height: 250px;
